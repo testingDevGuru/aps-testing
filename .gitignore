@@ -1,5 +1,8 @@
 .settings/org.eclipse.wst.common.project.facet.core.xml
 .settings/org.hibernate.eclipse.console.prefs
+.settings/org.eclipse.core.resources.prefs
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
 target/classes/META-INF/MANIFEST.MF
 target/classes/META-INF/maven/com.tista.aps/aps-testing/pom.properties
 target/classes/META-INF/maven/com.tista.aps/aps-testing/pom.xml
@@ -10,3 +13,4 @@ target/classes/com/aps/testing/stepDefinitions/CurrIdentity.class
 target/classes/com/aps/testing/stepDefinitions/DbValidation.class
 target/classes/com/aps/testing/util/DbConnection.class
 target/classes/com/aps/testing/util/TestConfig.class
+target/classes/com/aps/testing/util/CucumberRunner.class
