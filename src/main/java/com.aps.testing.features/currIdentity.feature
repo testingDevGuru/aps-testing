@@ -4,6 +4,6 @@ Feature: Validate what's in DB against the content of  XML
     |ec2-user|<user>|
     |54.174.19.252|<host>|
     |myEC2Puty.ppk|<privateKey>|
-    |reset.bat|<file>|
+    |test.bat|<file>|
     When I query the curr database  for the provider <provider>
     #Then the <firstName>,  <lastName>, <SSN> and <DOB> from the XML should match with the output of the DB
