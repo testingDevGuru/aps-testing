@@ -15,4 +15,16 @@ target/classes/com/aps/testing/util/DbConnection.class
 target/classes/com/aps/testing/util/TestConfig.class
 target/classes/com/aps/testing/util/CucumberRunner.class
 .classpath
-.project
+bin/.gitignore
+bin/README.md
+bin/pom.xml
+bin/src/main/java/com.aps.testing.features/DbValidation.feature
+bin/src/main/java/com.aps.testing.features/currIdentity.feature
+bin/src/main/java/com/aps/testing/helper/CurrIdentityHelper.class
+bin/src/main/java/com/aps/testing/stepDefinitions/CurrIdentity.class
+bin/src/main/java/com/aps/testing/stepDefinitions/DbValidation.class
+bin/src/main/java/com/aps/testing/util/CucumberRunner.class
+bin/src/main/java/com/aps/testing/util/DbConnection.class
+bin/src/main/java/com/aps/testing/util/TestConfig.class
+bin/test.bat
+bin/test.sh
