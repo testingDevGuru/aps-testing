@@ -4,3 +4,4 @@ Scenario: Verifing Db connection
 	Given I have DB connection 
 	When I run sql query 
 	Then I should get response data
+	And I close DB connection

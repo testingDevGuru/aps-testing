@@ -32,5 +32,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/Users/Ferkat/Desktop/Personal-Projects/Java/aps-testing/src/main/drivers/ojdbc6.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

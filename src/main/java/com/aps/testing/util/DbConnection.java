@@ -9,6 +9,8 @@ import java.sql.Statement;
 public class DbConnection {
 
 	public static Connection con = null;
+	public static ResultSet rs = null;
+	public static Statement stmt=null;
 
 	public void setDbConnection() throws SQLException {
 		try {
@@ -19,15 +21,17 @@ public class DbConnection {
 			return;
 		}
 		System.out.println("Oracle JDBC Driver Registered!");
-		Connection connection = null;
+
 		try {
-			connection = DriverManager.getConnection(TestConfig.DbUrl, TestConfig.DbUserName, TestConfig.dbPassword);
+			con = DriverManager.getConnection(
+					"jdbc:oracle:thin:@apsdb-reengineering.cjqj4gfuhy2n.us-east-1.rds.amazonaws.com:1521:APSDB",
+					TestConfig.DbUserName, TestConfig.dbPassword);
 		} catch (SQLException e) {
 			System.out.println("Connection Failed! Check output console");
 			e.printStackTrace();
 			return;
 		}
-		if (connection != null) {
+		if (con != null) {
 			System.out.println("Successfully connected to DB.");
 		} else {
 			System.out.println("Failed to make connection!");
@@ -36,9 +40,9 @@ public class DbConnection {
 	}
 
 	public ResultSet executeQuery(String query) {
-		ResultSet rs = null;
+
 		try {
-			Statement stmt = con.createStatement();
+			stmt = con.createStatement();
 			rs = stmt.executeQuery(query);
 
 		} catch (SQLException e) {
@@ -47,5 +51,18 @@ public class DbConnection {
 
 		return rs;
 
+	}
+	
+	public void closeConnection() throws SQLException {
+		try {
+			rs.close();
+			stmt.close();
+			con.close();
+			System.out.println("Connection closed successfully.");
+		} catch (SQLException e) {
+			System.out.println("Error occured while closing connection.");
+			e.printStackTrace();
+		}
+		
 	}
 }
