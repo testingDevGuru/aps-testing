@@ -1,23 +1,12 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-/target/*
+.settings/org.eclipse.wst.common.project.facet.core.xml
+.settings/org.hibernate.eclipse.console.prefs
+target/classes/META-INF/MANIFEST.MF
+target/classes/META-INF/maven/com.tista.aps/aps-testing/pom.properties
+target/classes/META-INF/maven/com.tista.aps/aps-testing/pom.xml
+target/classes/com.aps.testing.features/DbValidation.feature
+target/classes/com.aps.testing.features/currIdentity.feature
+target/classes/com/aps/testing/helper/CurrIdentityHelper.class
+target/classes/com/aps/testing/stepDefinitions/CurrIdentity.class
+target/classes/com/aps/testing/stepDefinitions/DbValidation.class
+target/classes/com/aps/testing/util/DbConnection.class
+target/classes/com/aps/testing/util/TestConfig.class
