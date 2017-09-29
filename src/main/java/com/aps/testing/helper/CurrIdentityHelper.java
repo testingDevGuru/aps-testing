@@ -1,12 +1,8 @@
 package com.aps.testing.helper;
 
-import java.io.BufferedReader;
-
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintStream;
-
 
 import com.jcraft.jsch.Channel;
 import com.jcraft.jsch.ChannelExec;
@@ -15,7 +11,6 @@ import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
 
 public class CurrIdentityHelper {
-
 	/**
 	 * establishes connection to the cloud server 
 	 * and drops the file in a sub-directory
