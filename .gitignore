@@ -14,3 +14,5 @@ target/classes/com/aps/testing/stepDefinitions/DbValidation.class
 target/classes/com/aps/testing/util/DbConnection.class
 target/classes/com/aps/testing/util/TestConfig.class
 target/classes/com/aps/testing/util/CucumberRunner.class
+.classpath
+.project
